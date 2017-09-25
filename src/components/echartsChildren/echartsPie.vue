@@ -50,7 +50,7 @@
               {value: 335, name: '直接访问'},
               {value: 400, name: '搜索引擎'}
             ],
-            roseType: 'angle',
+            roseType: 'angle', // 南丁格尔图
             label: {
               normal: {
                 textStyle: { // 文字颜色
@@ -68,7 +68,7 @@
             itemStyle: { // 扇形颜色
               normal: {
                 color: '#c23531',
-                shadowBlur: 200,
+                shadowBlur: 200, // 阴影大小
                 shadowColor: 'rgba(0, 0, 0, 0.5)'
               }
             }
