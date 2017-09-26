@@ -20,7 +20,12 @@
           <router-link to="/echarts">echarts-bar</router-link>
           <ul>
             <li><router-link to="/echartsLine">echarts-line</router-link></li>
+            <li><router-link to="/echartsScatter">echarts-scatter</router-link></li>
             <li><router-link to="/echartsPie">echarts-pie</router-link></li>
+            <li><router-link to="/echartsBlend">echarts-blend</router-link></li>
+            <li><router-link to="/visualMapContinuous">visualMap-连续</router-link></li>
+            <li><router-link to="/visualMapPiecewise">visualMap-分段</router-link></li>
+            <li><router-link to="/echartsDrag">echarts-drag</router-link></li>
           </ul>
         </li>
       </ul>

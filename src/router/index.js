@@ -11,8 +11,13 @@ import pie from '@/components/chartChildren/pie'
 import radar from '@/components/chartChildren/radar'
 import RandomChart from '@/components/RandomChart'
 import echarts from '@/components/echarts'
-import echartsLine from '@/components/echartsChildren/echartsLine'
+import echartsScatter from '@/components/echartsChildren/echartsScatter'
 import echartsPie from '@/components/echartsChildren/echartsPie'
+import echartsLine from '@/components/echartsChildren/echartsLine'
+import echartsBlend from '@/components/echartsChildren/echartsBlend'
+import visualMapContinuous from '@/components/echartsChildren/visualMapContinuous'
+import visualMapPiecewise from '@/components/echartsChildren/visualMapPiecewise'
+import echartsDrag from '@/components/echartsChildren/echartsDrag'
 
 Vue.use(Router)
 
@@ -67,12 +72,36 @@ export default new Router({
       component: echarts
     },
     {
-      path: '/echartsLine',
-      component: echartsLine
+      path: '/echartsScatter',
+      component: echartsScatter
     },
     {
       path: '/echartsPie',
       component: echartsPie
+    },
+    {
+      path: '/echartsLine',
+      component: echartsLine
+    },
+    {
+      path: '/echartsBlend',
+      component: echartsBlend
+    },
+    {
+      path: '/visualMapContinuous',
+      component: visualMapContinuous
+    },
+    {
+      path: '/visualMapPiecewise',
+      component: visualMapPiecewise
+    },
+    {
+      path: '/echartsDrag',
+      component: echartsDrag
+    },
+    {
+      path: '/echartsDrag',
+      component: echartsDrag
     }
   ]
 })

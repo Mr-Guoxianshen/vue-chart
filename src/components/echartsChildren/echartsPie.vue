@@ -49,10 +49,19 @@
               {value: 310, name: '邮件营销'},
               {value: 335, name: '直接访问'},
               {value: 400, name: '搜索引擎'}
+              /* {
+                value: 100,
+                name: '颜色设置',
+                itemStyle: {
+                  normal: {
+                    color: 'red' // 扇形颜色也可以通过数据下每项进行设置
+                  }
+                }
+              } */
             ],
             roseType: 'angle', // 南丁格尔图
             label: {
-              normal: {
+              normal: { // 正常样式
                 textStyle: { // 文字颜色
                   color: 'rgba(255, 255, 255, 0.3)'
                 }
@@ -66,14 +75,19 @@
               }
             },
             itemStyle: { // 扇形颜色
-              normal: {
-                color: '#c23531',
+              normal: { // 正常样式
+                // color: 'red', // 扇形背景颜色，设置后全局背景颜色不在起作用
                 shadowBlur: 200, // 阴影大小
                 shadowColor: 'rgba(0, 0, 0, 0.5)'
+              },
+              emphasis: {
+                // 鼠标 hover 的样式
               }
             }
           }
-        ]
+        ],
+        // 扇形背景颜色
+        color: ['rgb(254,67,101)', 'rgb(252,157,256)', 'rgb(249,205,173)', 'rgb(200,200,169)', 'rgb(131,175,155)']
       })
     },
     methods: {
